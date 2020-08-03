@@ -179,3 +179,5 @@ bower.json
 
 # End of https://www.toptal.com/developers/gitignore/api/rails,node
 n
+# Ignore master key for decrypting credentials and more.
+/config/master.key
