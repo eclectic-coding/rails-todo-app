@@ -1,2 +1,20 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+
+<div class="card mx-auto mt-5 shadow-sm rounded">
+  <div class="card-body">
+    <h3 class="card-title text-center">Begin Here</h3>
+    <div class="d-flex">
+      <img src="checklist.png" alt="">
+      <img class="img-fluid mr-2 img-checklist" src="<%= asset_path('checklist') %>" alt="Todo list clipboard image.">
+      <p class="card-text">
+        Are you busy? Is life seemingly taking over your day? This App is here to help you manage your activity list for the day. You have the ability to create new list items, edit them, and delete items as they are completed.
+        <%= link_to 'Click to Begin', todos_path, class: "btn btn-primary my-4 m1-5" %>
+<!--        <button class="btn btn-primary my-4">Click to Begin</button>-->
+      </p>
+    </div>
+    <blockquote class="mx-auto mt-5 quote-card">
+      <p>“Those who are wise won't be busy, and those who are too busy can't be wise.”
+      </p>
+      <cite>Lin Yutang, The Importance of Living </cite>
+    </blockquote>
+  </div>
+</div>

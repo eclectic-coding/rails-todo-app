@@ -8,12 +8,22 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 </head>
 
-<body>
-<% flash.each do |name, msg| %>
-  <ul>
-    <li><%= msg %></li>
-  </ul>
-<% end %>
-<%= yield %>
+<body style="height: 100vh" class="d-flex flex-column">
+
+<%= render 'layouts/navigation' %>
+<%= render 'layouts/messages' %>
+
+<main role="main" class="flex-shrink-0">
+  <div class="container">
+    <%= yield %>
+  </div>
+</main>
+
+<footer class="footer mt-auto py-3">
+  <div class="container">
+    <span class="text-muted">Place sticky footer content here.</span>
+  </div>
+</footer>
+
 </body>
 </html>

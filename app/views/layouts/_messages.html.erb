@@ -1,0 +1,8 @@
+<% flash.each do |type| %>
+  <div class="alert alert-danger bg-danger alert-dismissible fade show w-100 border-0 text-center" role="alert">
+    <strong class="text-white mx-auto"><%= flash[type] %></strong>
+    <button type="button" class="btn close" data-dismiss="alert" aria-label="Close">
+      <span class="text-white" aria-hidden="true">×</span>
+    </button>
+  </div>
+<% end %>
