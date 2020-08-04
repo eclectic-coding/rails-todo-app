@@ -1,7 +1,13 @@
-<h1>Showing a todo</h1>
+<div class="card mt-5 mx-auto p-4" style="width: 350px">
+  <h2 class="font-weight-bold">Your Task</h2>
 
-<p>name: <%= @todo.name %></p>
-<p>description: <%= @todo.description %></p>
+  <div class="font-weight-bold">Name:</div>
+  <div><%= @todo.name %></div>
+  <div class="mt-4 font-weight-bold">Description:</div>
+  <p> <%= @todo.description %></p>
 
-<%= link_to 'Edit this todo', edit_todo_path(@todo) %>
-<%= link_to 'Back to todos listing', todos_path %>
+  <div class="mx-auto">
+    <%= link_to 'Edit ToDo', edit_todo_path(@todo), class: "m-2 btn btn-primary" %>
+    <%= link_to 'Back to list', todos_path, class: "m-2 btn btn-primary" %>
+  </div>
+</div>
